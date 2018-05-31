@@ -1,5 +1,5 @@
 package tokeniser;
 
-Object WordTokeniser{
+object WordTokeniser{
 }
 

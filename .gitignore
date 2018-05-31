@@ -3,6 +3,7 @@ logs
 project/project
 project/target
 modules/**/project
+modules/**/target
 target
 tmp
 *.tmp
@@ -17,3 +18,7 @@ dist
 .project
 .worksheet
 *.sc
+modules/**/*DS*
+*DS*
+
+
