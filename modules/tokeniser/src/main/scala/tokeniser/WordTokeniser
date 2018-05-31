@@ -1,5 +1,0 @@
-package tokeniser;
-
-object WordTokeniser{
-}
-

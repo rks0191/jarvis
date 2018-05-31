@@ -22,9 +22,9 @@ val scalacOpts211 = Seq(
 val jvmGCSettings = Seq("-J-XX:+UseG1GC", "-J-XX:+UseStringDeduplication", "-J-XshowSettings:vm")
 val jvmGeneralSettings = jvmGCSettings ++ Seq("-J-XX:+IgnoreUnrecognizedVMOptions")
 // https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools
-libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.8.4"
+val commonSettings =libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.8.4"
 
-lazy val tokeniser = (project in file("modules/tokeniser"))
+lazy val tokeniser = (project in file("modules/tokeniser")).settings(commonSettings)
 lazy val root = (project in file("."))
   .aggregate(
     tokeniser
